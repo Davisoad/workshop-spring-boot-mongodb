@@ -12,17 +12,17 @@ import com.javadavysec.workshopmongo.domain.Post;
 import com.javadavysec.workshopmongo.domain.User;
 import com.javadavysec.workshopmongo.dto.AuthorDTO;
 import com.javadavysec.workshopmongo.dto.CommentDTO;
-import com.javadavysec.workshopmongo.repository.PostRepository;
-import com.javadavysec.workshopmongo.repository.UsersRepository;
+import com.javadavysec.workshopmongo.repository.PostsRepository;
+import com.javadavysec.workshopmongo.repository.UserRepository;
 
 @Configuration
 public class Instantiation implements CommandLineRunner {
 
     @Autowired
-    private UsersRepository userRepository;
+    private UserRepository userRepository;
 
     @Autowired
-	private PostRepository postReposiroty;
+	private PostsRepository postReposiroty;
 
     @Override
     public void run(String... args) throws Exception {

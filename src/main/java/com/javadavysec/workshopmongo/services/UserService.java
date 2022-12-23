@@ -8,14 +8,14 @@ import org.springframework.stereotype.Service;
 
 import com.javadavysec.workshopmongo.domain.User;
 import com.javadavysec.workshopmongo.dto.UserDTO;
-import com.javadavysec.workshopmongo.repository.UsersRepository;
+import com.javadavysec.workshopmongo.repository.UserRepository;
 import com.javadavysec.workshopmongo.services.exception.ObjectNotFoundException;
 
 @Service
 public class UserService {
 
     @Autowired
-    private UsersRepository repo;
+    private UserRepository repo;
 
     public List<User> findAll() {
         return repo.findAll();
